@@ -1,0 +1,35 @@
+
+.ZoomControl {
+  position: absolute;
+
+  left: 15px;
+  top: 15px;
+
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid #666;
+
+  &-button {
+    color: #666;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+
+    // reet default styles
+    border: none;
+    background: #eee;
+
+    &:hover {
+      background: #bbb;
+    }
+
+    &:focus {
+      outline: 0;
+    }
+  }
+}

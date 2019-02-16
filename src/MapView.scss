@@ -8,5 +8,7 @@ $MAP_SIZE: 600px;
   width: $MAP_SIZE;
   height: $MAP_SIZE;
 
-  // overflow: auto; // TODO: review
+  white-space: nowrap;
+
+  overflow: auto; // TODO: review
 }

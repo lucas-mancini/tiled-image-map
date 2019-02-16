@@ -37,9 +37,13 @@ class MapView extends Component {
         <ZoomControl onZoomIn={this.handleIncreaseZoomLevel} onZoomOut={this.handleDecreaseZoomLevel} />
         {
           tileMatrix.map(row => (
-            row.map(tile => (
-              <ImageTile src={tile} key={tile} />
-            ))
+            <div className='MapView-row'>
+              {
+                row.map(tile => (
+                  <ImageTile src={tile} key={tile} />
+                ))
+              }
+            </div>
           ))
         }
       </div>

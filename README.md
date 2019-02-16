@@ -12,6 +12,13 @@ Finally, these are the provided commands:
 
 ---
 
+## Technologies used
+
+  - The app was bootstrapped using [Create React App](https://github.com/facebook/create-react-app)
+  - React - https://reactjs.org/
+  - SASS - https://sass-lang.com/
+  - react-testing-library - https://github.com/kentcdodds/react-testing-library
+
 ## Requirements
 
 ### Background

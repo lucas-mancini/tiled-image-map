@@ -7,7 +7,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <h1 className="App-header-text">
-            2D Tiled image map
+            2D tiled image map
           </h1>
         </header>
         <main className='App-main'>

@@ -39,9 +39,7 @@ class MapView extends Component {
           tileMatrix.map(row => (
             <div className='MapView-row'>
               {
-                row.map(tile => (
-                  <ImageTile src={tile} key={tile} />
-                ))
+                row.map(tile => <ImageTile src={tile} key={tile} />)
               }
             </div>
           ))

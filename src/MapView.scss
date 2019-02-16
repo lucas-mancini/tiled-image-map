@@ -11,4 +11,8 @@ $MAP_SIZE: 600px;
   white-space: nowrap;
 
   overflow: auto; // TODO: review
+
+  &-row {
+    line-height: 0.8;
+  }
 }

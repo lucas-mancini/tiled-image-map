@@ -13,7 +13,7 @@
   &-button {
     color: #666;
 
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
 
     height: 35px;
@@ -25,6 +25,7 @@
     background: #eee;
 
     &:hover {
+      color: darkblue;
       background: #bbb;
     }
 

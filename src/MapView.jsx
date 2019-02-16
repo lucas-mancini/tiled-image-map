@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ZoomControl from './ZoomControl';
 import ImageTile from './ImageTile';
+import TileMatrices from './TileMatrices.json'
 import './MapView.scss';
 
 class MapView extends Component {
@@ -28,12 +29,13 @@ class MapView extends Component {
   render () {
     const { zoomLevel } = this.state;
 
-    // TODO: retrieve array of images depending on zoom level
+    // Retrieve matrix of images depending on zoom level
+    const tileMatrix = TileMatrices[zoomLevel];
 
     return (
       <div className='MapView'>
         <ZoomControl onZoomIn={this.handleIncreaseZoomLevel} onZoomOut={this.handleDecreaseZoomLevel} />
-        <ImageTile src='../tiled/0/0/0.jpg' />
+        <ImageTile src={tileMatrix[0][0]} />
       </div>
     );
   }

@@ -1,9 +1,9 @@
 
 .ZoomControl {
-  position: absolute;
-
-  left: 15px;
-  top: 15px;
+  // Keep the zoom control within the map view at all times
+  position: fixed;
+  margin-left: 15px;
+  margin-top: 15px;
 
   display: flex;
   flex-direction: column;

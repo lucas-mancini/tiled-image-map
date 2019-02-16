@@ -1,0 +1,21 @@
+.App {
+  text-align: center;
+
+  &-header {
+    background-color: #282c34;
+    padding: 20px;
+  }
+
+  &-header-text {
+    font-size: calc(15px + 2vmin);
+    color: white;
+  }
+
+  &-main {
+    padding: 20px;
+  }
+}
+
+/* .App-link {
+  color: #61dafb;
+} */

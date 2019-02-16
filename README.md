@@ -1,5 +1,4 @@
-2D Tiled image map
-==================
+# 2D Tiled image map
 
 ## How to run
 

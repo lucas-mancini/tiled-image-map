@@ -1,0 +1,10 @@
+
+$MAP_SIZE: 600px;
+
+.MapView {
+  display: inline-block;
+  width: $MAP_SIZE;
+  height: $MAP_SIZE;
+
+  border: 2px solid #61dafb;
+}

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import MapView from './MapView.jsx';
 import './App.scss';
 
 class App extends Component {
@@ -11,7 +12,7 @@ class App extends Component {
           </h1>
         </header>
         <main className='App-main'>
-          Testing
+          <MapView />
         </main>
       </div>
     );

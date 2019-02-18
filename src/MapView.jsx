@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ElementPan from 'react-element-pan';
 import ZoomControl from './ZoomControl';
 import ImageTile from './ImageTile';
 import TileMatrices from './TileMatrices.json'
@@ -35,15 +36,28 @@ class MapView extends Component {
     return (
       <div className='MapView'>
         <ZoomControl onZoomIn={this.handleIncreaseZoomLevel} onZoomOut={this.handleDecreaseZoomLevel} />
-        {
-          tileMatrix.map((row, index) => (
-            <div className='MapView-row' key={`row-${index}`}>
-              {
-                row.map(tile => <ImageTile src={tile} key={tile} />)
-              }
-            </div>
-          ))
-        }
+        <ElementPan
+          className='MapView-pan'
+          width={600}
+          height={600}
+          startX={300} // todo: update with the saved position value
+          startY={300}
+          onPanStart={_coords => {
+
+          }}
+          onPanStop={_coords => {
+            // update current position
+          }}>
+          {
+            tileMatrix.map((row, index) => (
+              <div className='MapView-row' key={`row-${index}`}>
+                {
+                  row.map(tile => <ImageTile src={tile} key={tile} />)
+                }
+              </div>
+            ))
+          }
+        </ElementPan>
       </div>
     );
   }

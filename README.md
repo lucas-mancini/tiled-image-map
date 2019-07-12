@@ -17,7 +17,7 @@ Finally, these are the provided commands:
   - The app was bootstrapped using [Create React App](https://github.com/facebook/create-react-app)
   - React - https://reactjs.org/
   - SASS - https://sass-lang.com/
-  - react-testing-library - https://github.com/kentcdodds/react-testing-library
+  - react-testing-library - https://github.com/testing-library/react-testing-library
 
 ## Requirements
 
